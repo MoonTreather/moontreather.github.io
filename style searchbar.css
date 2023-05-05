@@ -37,7 +37,7 @@
     background:#fff; 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     border-right: 1px solid rgb(230, 236, 240);
   }
@@ -72,10 +72,11 @@
   .nav-links a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
+    width: 55px;
     font-weight: 750;
     color: rgba(20, 23, 26, 0.93);
-    padding: 10px 15px;
+    padding: 15px;
   }
     
   .current-page a { color: rgba(29,161,242,1.00);}
@@ -83,7 +84,7 @@
   .nav-links a:hover {
     background: rgba(29, 161, 242, 0.1);
     color: #1da1f2;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: 25px;
   }
   
@@ -91,43 +92,44 @@
     white-space: nowrap;
   }
   .nav-links i {
-    padding-right: 0.5rem;
+    padding-right: 0rem;
   }
   .nav-links {
     margin-top: 1rem;
   }
   
-  .tweet a {
+  .tweet-button a {
     display: block;
     margin: auto;
-    width: 100%;
     color: #fff;
-    background: #1da1f2;
+    background: #991df2;
     font-size: 1rem;
     font-weight: 700;
-    padding: 10px 5rem;
+    padding: 10px .8rem;
     border-radius: 25px;
   }
   
-  .tweet a:hover {
+  .tweet-button a:hover {
     color: #fff;
     background: #198ed6;
   }
   
   .profile-box {
     display: flex;
+    width: 55px;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
     align-self: center;
-    padding: 0 0.6rem;
+    padding: 0rem;
   }
+  /*
   .profile-box:hover {
     background: rgba(29, 161, 242, 0.1);
     border-radius: 25px;
     cursor: pointer;
-  }
+  }*/
   
   .profile-box img {
     display: block;
