@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone de Twitter-test</title>
+    <link rel="stylesheet" href="style searchbar.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76Z3J8EW76"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-76Z3J8EW76');
+    </script>
+
+    <script type="text/javascript">
+      (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+      </script>
+</head>
+<body>
+
+    <div class="main-flex-container">
+        <div class="left-flex-container flex-item">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-items logo"><a href="#"><i data-feather="twitter"></i></a></li>
+              <li class="nav-items current-page"><a href="index.html"><i data-feather="home"></i> Home</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="hash"></i> Explore</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bell"></i> Notifications</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="mail"></i> Messages</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="bookmark"></i> Bookmarks</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="archive"></i> Lists</a></li>
+              <li class="nav-items"><a href="profile.html"><i data-feather="user"></i> Profile</a></li>
+              <li class="nav-items"><a href="#"><i data-feather="more-horizontal"></i> More</a></li>
+            </ul>
+          </div>
+          <div class="tweet"><a href="#">Tweet</a></div>
+          <div class="profile-box">
+            <img src="./img/profile.jpg" alt="profile">
+            <div class="profile-link">
+              <p class="full-name">Equipo 2</p>
+              <p class="user-name">@Team.2</p>
+            </div>
+            <div class="options-icon"><i class="fas fa-caret-down"></i></div>
+          </div>
+        </div>
+    
+        <div class="center-flex-container flex-item">
+          <div class="home">
+            <div class="search-box">
+              <i data-feather="search"></i>
+              <input type="text" placeholder="Search on Twitter">
+            </div>
+          </div>
+
+          <div class="profile-links">
+            <table style="width: 100%">
+              <tr>
+                <th class="profile-section"><a href="index - test.html">For You</a></th>
+                <th class="profile-section current-section"><a href="#">Following</a></th>
+                <th class="profile-section"><a href="#">Circles</a></th>
+              </tr>
+            </table>
+          </div>
+    
+
+          <!-- Create tweet box -->
+
+          <div class="post-tweet">
+              <div class="group-1">
+                <img src="./img/profile.jpg" alt="profile-pics">
+                <input type="text" placeholder="What's happening?">
+              </div>
+              <div class="group-2">
+                <div class="post-icons">
+                  <span><i data-feather="image" width="1.2rem"></i></span>
+                  <span><i data-feather="list" width="1.2rem"></i></span>
+                  <span><i data-feather="smile" width="1.2rem"></i></span>
+                  <span><i data-feather="calendar" width="1.2rem"></i></span>
+                  <span><i data-feather="map-pin" width="1.2rem"></i></span>
+                </div>
+                <button class="btn" type="submit">Tweet</button>
+              </div>
+          </div>
+
+           <!-- User Content Feed -->
+            <!--tweet-->
+            <div class="tweets">
+                <div class="user-pics"><img src="./img/fwn_user1.jpg" alt="user3"></div>
+                <div class="user-content-box">
+                  <div class="user-names">
+                    <hi class="full-name">Gabriel Sanchez</hi>
+                    <p class="user-name">@gabosanz</p>
+                    <p class="time"> . 58mins</p>
+                  </div>
+                  
+                  <div class="user-content">
+                    <a href="tweet.html" class="a-link">Trabajando en un nuevo album, super emocionado de compartirlo pronto con todos ustedes.</a>
+                  </div>
+      
+                  <div class="content-icons">
+                    <div class="blue">
+                      <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                    </div>
+                    <div class="green">
+                      <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                    </div>
+                    <div class="red">
+                      <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                    </div>
+                    <div class="blue">
+                      <span><i data-feather="share" width="1.2rem"> </i></span>
+                    </div>            
+                  </div>
+        
+                </div>
+              </div>
+              <!---->
+              <div class="tweets">
+                <div class="user-pics"><img src="./img/fwn_user2.jpg" alt="user2"></div>
+                <div class="user-content-box">
+                  <div class="user-names">
+                    <hi class="full-name">Veronica Vernal</hi>
+                    <p class="user-name">@vv</p>
+                    <p class="time"> . 1hr</p>
+                  </div>
+                  
+                  <div class="user-content">
+                    <p>Today is the day I rest in my bed all day with some awsome music
+                      <a href="#">#relaxing</a> <a href="#">#bedDay</a> <a href="#">#stayathome</a></p>
+                  </div>
+      
+                  <div class="content-icons">
+                    <div class="blue">
+                      <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                    </div>
+                    <div class="green">
+                      <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                    </div>
+                    <div class="red">
+                      <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                    </div>
+                    <div class="blue">
+                      <span><i data-feather="share" width="1.2rem"> </i></span>
+                    </div>            
+                  </div>
+        
+                </div>
+              </div>
+      
+              <div class="tweets">
+                <div class="user-pics"><img src="./img/user1.jpg" alt="user1"></div>
+                <div class="user-content-box">
+                  <div class="user-names">
+                    <hi class="full-name">Eric Alvarez</hi>
+                    <p class="user-name">@eric_alvarez</p>
+                    <p class="time"> . 2hrs</p>
+                  </div>
+                  
+                  <div class="user-content">
+                    <p>Eat. Code, Sleep. repeat! <a href="#">#CodeNewbie</a> <a href="#">#100DaysOfCode</a></p>
+                    <img src="./img/content1.jpg" alt="content1">
+                  </div>
+        
+                  <div class="content-icons">
+                    <div class="blue">
+                      <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                    </div>
+                    <div class="green">
+                      <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                    </div>
+                    <div class="red">
+                      <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                    </div>
+                    <div class="blue">
+                      <span><i data-feather="share" width="1.2rem"> </i></span>
+                    </div>            
+                  </div>
+        
+                </div>
+              </div>
+      
+              <div class="tweets">
+                <div class="user-pics"><img src="./img/user4.jpg" alt="user4"></div>
+                <div class="user-content-box">
+                  <div class="user-names">
+                    <hi class="full-name">Harry Wilson</hi>
+                    <p class="user-name">@Harrywilson</p>
+                    <p class="time"> . 4hrs</p>
+                  </div>
+                  
+                  <div class="user-content">
+                    <p>There's no clear correlation between your background and what you are going to achieve in life..</p>
+                  </div>
+      
+                  <div class="content-icons">
+                    <div class="blue">
+                      <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                    </div>
+                    <div class="green">
+                      <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                    </div>
+                    <div class="red">
+                      <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                    </div>
+                    <div class="blue">
+                      <span><i data-feather="share" width="1.2rem"> </i></span>
+                    </div>            
+                  </div>
+        
+                </div>
+              </div>
+  
+              <!-- Section Follow -->
+  
+              <section class="follow-users-box">
+      
+                <div class="follow-header">
+                  <h1 class="main-text">Who to follow</h1>
+                </div>
+      
+                <div class="follow-user">
+                  <div class="related-followers">
+                    <p class="sub-text"><i class="fas fa-user"></i> Ellie Jamie and 20 others follow</p>
+                  </div>
+      
+                  <div class="user-profile">
+                    <div class="user-pics"><img src="./img/user6.jpg" alt="user6">
+                    </div>
+      
+                    <div class="user-profile-content">
+                      <div class="title-container">
+                        <div class="user-names">
+                          <div class="full-name"><h1 class="main-text">Linda Shelton #BlackLivesMatter</h1></div>
+                          <div class="user-name"><p class="sub-text">@Linda_shelton</p></div>
+                        </div>
+      
+                        <div class="follow-btn"><a href="#">follow</a></div>
+      
+                      </div>
+                      <div class="bio-container">
+                        <p><a href="#">♯WordPress/Php</a> Geek Smiling face with sunglasses <a href="#">♯JavascriptDeveloper</a> Slightly smiling face <a href="#">♯ToolsCreator</a> <a href="#">♯http://webscreenshot.now.sh</a> Always ready to help with code Handshake</p>
+                      </div>
+                      
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+                <div class="follow-user">
+                  <div class="related-followers">
+                    <p class="sub-text"><i class="fas fa-user"></i> JavaScript Ninja and 200 others follow</p>
+                  </div>
+      
+                  <div class="user-profile">
+                    <div class="user-pics"><img src="./img/user7.jpg" alt="user7">
+                    </div>
+      
+                    <div class="user-profile-content">
+                      <div class="title-container">
+                        <div class="user-names">
+                          <div class="full-name"><h1 class="main-text">Gavin Johnson #JavaScript</h1></div>
+                          <div class="user-name"><p class="sub-text">@Gavinjohnson</p></div>
+                        </div>
+      
+                        <div class="follow-btn"><a href="#">follow</a></div>
+      
+                      </div>
+                      <div class="bio-container">
+                       <a href="#">♯JavascriptDeveloper</a> Avocado | Fire Speaker | Fire Teacher | Youtube - <a href="#">http://bit.ly/jqqyt</a> |<a href="#"> @twilio</a> Champion | Motto: <a href="#">#LearnBuildTeach</a></p>
+                      </div>
+                      
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+                <div class="follow-user">
+                  <div class="related-followers">
+                    <p class="sub-text"><i class="fas fa-user"></i> The Code Boy and 50 others follow</p>
+                  </div>
+      
+                  <div class="user-profile">
+                    <div class="user-pics"><img src="./img/user8.jpg" alt="user8">
+                    </div>
+      
+                    <div class="user-profile-content">
+                      <div class="title-container">
+                        <div class="user-names">
+                          <div class="full-name"><h1 class="main-text">William D Gallucci</h1></div>
+                          <div class="user-name"><p class="sub-text">@Iamwilliamd_shelton</p></div>
+                        </div>
+      
+                        <div class="follow-btn"><a href="#">follow</a></div>
+      
+                      </div>
+                      <div class="bio-container">
+                        <p>software engineer at 
+                          <a href="#">@soonastudios</a>
+                          . career switcher. vue + rails. tweeting about tech, books, startups, and big ideas. writing @ <a href="#">http://jamestucker.dev.</a></p>
+                      </div>
+                      
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+                <div class="follow-footer">
+                  <a href="#">Show more</a>
+                </div>
+      
+              </section>
+  
+              <!-- Fin de sección -->
+      
+              <div class="tweets">
+                <div class="user-pics"><img src="./img/user5.jpg" alt="user5"></div>
+                <div class="user-content-box">
+                  <div class="user-names">
+                    <hi class="full-name">Nora Chao</hi>
+                    <p class="user-name">@chaonora</p>
+                    <p class="time"> . 6hrs</p>
+                  </div>
+                  
+                  <div class="user-content">
+                    <p>Time to settle down and play my favourite game IN THE WORLD Earth globe europe-africa</p>
+      
+                    <p>  Haven’t played for about a month, too busy coding. 
+                      So tired this evening though. 
+                      Poker tournament with husband later..</p>
+                      <img src="./img/content5.jpg" alt="content5">
+                  </div>
+      
+                  <div class="content-icons">
+                    <div class="blue">
+                      <span><i data-feather="message-circle" width="1.2rem"> </i></span> <i>109</i>
+                    </div>
+                    <div class="green">
+                      <span><i data-feather="refresh-cw" width="1.2rem"> </i></span> <i>865</i>
+                    </div>
+                    <div class="red">
+                      <span><i data-feather="heart" width="1.2rem"> </i></span> <i>1.6k</i>
+                    </div>
+                    <div class="blue">
+                      <span><i data-feather="share" width="1.2rem"> </i></span>
+                    </div>            
+                  </div>
+        
+                </div>
+              </div>
+      
+              <div class="pagnation">
+                <a href="#">Load more</a>
+              </div>
+      
+          </div>
+      
+          
+      
+          <div class="right-flex-container flex-item">
+  
+            <!--
+            <div class="search-box">
+              <i data-feather="search"></i>
+              <input type="text" placeholder="Search Twitter">
+            </div> -->
+      
+            <div class="trends">
+              <ul>
+                <li class="nav-list header">
+                  <h2>Trends for you</h2>
+                  <i class="fas fa-cog">
+                </i>
+                <li class="nav-list">
+                  <div class="trend-list">
+                    <p class="sub-text">Trending in Naija</p>
+                    <p class="main-text">#BBNaija</p>
+                    <p class="sub-text">274K Tweets</p>
+                  </div>
+                  <div class="trend-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="trend-list">
+                    <p class="sub-text">Trending in Naija</p>
+                    <p class="main-text">#TaylorSwift</p>
+                    <p class="sub-text">154K Tweets</p>
+                  </div>
+                  <div class="trend-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="trend-list">
+                    <p class="sub-text">Trending in Naija</p>
+                    <p class="main-text">#Lover</p>
+                    <p class="sub-text">135K Tweets</p>
+                  </div>
+                  <div class="trend-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="trend-list">
+                    <p class="sub-text">Trending in Naija</p>
+                    <p class="main-text">#Dora</p>
+                    <p class="sub-text">124K Tweets</p>
+                  </div>
+                  <div class="trend-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="trend-list">
+                    <p class="sub-text">Trending in Naija</p>
+                    <p class="main-text">#TGIF</p>
+                    <p class="sub-text">43K Tweets</p>
+                  </div>
+                  <div class="trend-icon">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </li>
+                
+                
+                <li class="nav-list"><a href="#">Show more</a></li>
+              </ul>
+            </div>
+  
+            <div class="trends">
+              <ul>
+                <li class="nav-list header">
+                  <h2>Who to follow</h2>
+                  <i class="fas fa-cog">
+                </i>
+                <li class="nav-list">
+                  <div class="follow-list">
+                    <img src="./img/user9.jpg">
+                    <div class="follow-info">
+                      <div>
+                        <p class="main-text">Rita Guzman</p>
+                        <p class="sub-text">@ritgzm</p>
+                      </div>
+                      <a class="follow-btn" href="#" id="follow" onclick="change()" data-hover="Unfollow">Follow</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="follow-list">
+                    <img src="./img/user10.jpg">
+                    <div class="follow-info">
+                      <div>
+                        <p class="main-text">Luis Suarez</p>
+                        <p class="sub-text">@SuarzoLui</p>
+                      </div>
+                      <a class="follow-btn" href="#" id="follow2" onclick="change2()" data-hover="Unfollow">Follow</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="follow-list">
+                    <img src="./img/user11.jpg">
+                    <div class="follow-info">
+                      <div>
+                        <p class="main-text">Pete</p>
+                        <p class="sub-text">@unsleepingDD</p>
+                      </div>
+                      <a class="follow-btn" href="#" id="follow3" onclick="change3()" data-hover="Unfollow">Follow</a>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="nav-list"><a href="#">Show more</a></li>
+              </ul>
+            </div>
+      
+            <div class="right-footer">
+              <div class="footer-links">
+                <a href="#" class="sub-text">Terms</a>
+                <a href="#" class="sub-text">Privacy policy</a>
+                <a href="#" class="sub-text">Ads info</a>
+                <a href="#" class="sub-text">more</a>
+                <i class="fas fa-chevron-down sub-text"></i>
+              </div>
+              <div class="footer-copyright">
+                <p class="sub-text">&copy; 2023 Twitter, Inc.</p>
+              </div>
+      
+            </div>
+          
+          </div>
+          
+        </div>
+  
+        <script>
+          feather.replace()
+        </script>
+  
+        <script>
+          // Replace YOUR_TOKEN with your Project Token
+          mixpanel.init('6e0adad23c1fc45524c201664adeac9c', {debug: true}); 
+  
+          // Set this to a unique identifier for the user performing the event.
+          // eg: their ID in your database or their email address.
+          mixpanel.identify(/* "<USER_ID"> */)
+  
+          // Track an event. It can be anything, but in this example, we're tracking a Signed Up event.
+          // Include a property about the signup, like the Signup Type
+          mixpanel.track('Signed Up', {
+            'Signup Type': 'Referral',
+          });
+        </script>
+  
+        
+  </body>
+  </html>
