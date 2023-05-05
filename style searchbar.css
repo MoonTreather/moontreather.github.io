@@ -23,14 +23,14 @@
   
   /* Main Containers */
   .main-flex-container {
-    max-width: 1350px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
   }
   .left-flex-container {
-    flex: 1 0 22%;
+    flex: 1 5 1%;
     height: 100%;
     position: sticky;
     top: 0;
@@ -38,15 +38,16 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
     border-right: 1px solid rgb(230, 236, 240);
+    padding-right: 30px;
   }
   .center-flex-container {
-   flex: 3 0 45%;
+   flex: 1 0 38%;
    background:#fff;
   }
   .right-flex-container {
-    flex: 2 0 31%;
+    flex: 1 0 21%;
     height: 100%;
     width: 100%;
     position: sticky;
@@ -55,7 +56,8 @@
     border-left: 1px solid rgb(230, 236, 240);
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 20px;
   }
   
   /* Left Navigation */
@@ -102,7 +104,7 @@
     display: block;
     margin: auto;
     color: #fff;
-    background: #991df2;
+    background: #1da1f2;
     font-size: 1rem;
     font-weight: 700;
     padding: 10px .8rem;
@@ -714,7 +716,7 @@
     background: rgb(245, 248, 250);
     display: flex;
     flex-flow: column nowrap;
-    width: 80%;
+    width: 90%;
     border-radius: 15px;
     margin-top: 1rem;
   }
