@@ -991,3 +991,25 @@
     font-size: 1rem;
     content: attr(data-hover);
   }
+
+  /* Circles */
+  .follow-circles a{
+    font-weight: bold;
+    color: white;
+    background: #00BA7C;
+    padding: 0.3rem 1.1rem;
+    border-radius: 25px;
+  }
+  
+  .follow-btn a:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .follow-circles-current a{
+    font-weight: bold;
+    color: #00BA7C;
+    background: white;
+    padding: 0.3rem 1.1rem;
+    border-radius: 25px;
+    border: 0.1rem #00BA7C solid;
+  }
