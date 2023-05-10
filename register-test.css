@@ -42,9 +42,11 @@ body{
     margin-left: 72px;
 }
 
-.box-one i{
+.box-one img{
     color: #00acee;
     font-size: 1.8rem;
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
 }
 .box-two input{
     position: relative;
