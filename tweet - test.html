@@ -5,44 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tweet-Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style searchbar.css">
     <!--<link rel="stylesheet" href="all.css">-->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76Z3J8EW76"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-76Z3J8EW76');
+    </script>
+
+    <script type="text/javascript">
+      (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+      </script>
 </head>
 <body>
 
     <div class="main-flex-container">
-        <div class="left-flex-container flex-item">
-          <div class="nav-links">
-            <ul>
-              <li class="nav-items logo"><a href="#"><i data-feather="twitter"></i></a></li>
-              <li class="nav-items"><a href="index.html"><i data-feather="home"></i> Home</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="hash"></i> Explore</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="bell"></i> Notifications</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="mail"></i> Messages</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="bookmark"></i> Bookmarks</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="archive"></i> Lists</a></li>
-              <li class="nav-items"><a href="profile.html"><i data-feather="user"></i> Profile</a></li>
-              <li class="nav-items"><a href="#"><i data-feather="more-horizontal"></i> More</a></li>
-            </ul>
-          </div>
+      <div class="left-flex-container flex-item">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-items logo"><a href="#"><i data-feather="twitter"></i></a></li>
 
-
-          <div class="tweet"><a href="#">Tweet</a></div>
-          <div class="profile-box">
-            <img src="./img/profile.jpg" alt="profile">
-            <div class="profile-link">
-              <p class="full-name">Equipo 2</p>
-              <p class="user-name">@Team.2</p>
+            <div class="profile-box">
+              <img src="./img/profile.jpg" alt="profile">
             </div>
-            <div class="options-icon"><i class="fas fa-caret-down"></i></div>
-          </div>
+
+            <li class="nav-items"><a href="index - test.html"><i data-feather="home"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="hash"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="bell"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="mail"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="bookmark"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="archive"></i></a></li>
+            <li class="nav-items"><a href="profile - test.html"><i data-feather="user"></i></a></li>
+            <li class="nav-items"><a href="#"><i data-feather="more-horizontal"></i></a></li>
+          </ul>
         </div>
+
+        <div class="tweet-button"><a href="#"><i data-feather="feather"></i></a></div>
+      </div>
     
         <div class="center-flex-container flex-item">
           <div class="profile-header">
             <div class="back">
-              <a href="index.html"><i data-feather="arrow-left"></i></a>
+              <a href="index - test.html"><i data-feather="arrow-left"></i></a>
               <h1>Tweet</h1>
             </div>
           </div>
@@ -261,6 +273,21 @@
       <script>
         feather.replace()
       </script>
+
+<script>
+  // Replace YOUR_TOKEN with your Project Token
+  mixpanel.init('6e0adad23c1fc45524c201664adeac9c', {debug: true}); 
+
+  // Set this to a unique identifier for the user performing the event.
+  // eg: their ID in your database or their email address.
+  mixpanel.identify(/* "<USER_ID"> */)
+
+  // Track an event. It can be anything, but in this example, we're tracking a Signed Up event.
+  // Include a property about the signup, like the Signup Type
+  mixpanel.track('Signed Up', {
+    'Signup Type': 'Referral',
+  });
+</script>
 
     
 </body>
